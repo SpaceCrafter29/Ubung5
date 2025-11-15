@@ -10,12 +10,10 @@ public class h3 {
         };
         int input = 25667278;
             for(int i = 0; i < einheiten[0].length;i++) {
-                if(input >= einheiten[0][i]) {
                     while (input >= einheiten[0][i]) {
                         input -= einheiten[0][i];
                         einheiten[1][i]++;
                     }
-                }
             }
         System.out.println(Arrays.toString(einheiten[0]));
         System.out.println(Arrays.toString(einheiten[1]));
